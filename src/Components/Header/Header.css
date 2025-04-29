@@ -1,0 +1,10 @@
+header {
+  background-color: black;
+  color: white;
+}
+
+#header .row {
+  align-items: center;
+  display: flex;
+  height: 60px; /* or whatever height you want */
+}

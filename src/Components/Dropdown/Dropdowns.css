@@ -1,0 +1,14 @@
+.dropdowns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* .sortBy .field {
+  display: flex;
+  justify-content: end;
+} */
+
+.btn.dropdown-toggle {
+  background-color: transparent !important;
+}

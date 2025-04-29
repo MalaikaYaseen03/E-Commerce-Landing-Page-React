@@ -1,0 +1,8 @@
+.searchInputField input[type="search"] {
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
