@@ -1,0 +1,131 @@
+/*--------------------------------------------------------------
+# Certification
+--------------------------------------------------------------*/
+.card-box {
+  max-height: 551.3px;
+  margin-bottom: 1em;
+}
+#products {
+  padding: 15px;
+  margin-bottom: 2rem;
+}
+
+/* Scrollbar for Chrome, Edge */
+#products::-webkit-scrollbar {
+  width: 10px;
+}
+
+#products::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+#products::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+#products::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+@media (max-width: 1199px) {
+  .card-box {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .card-box {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 413px) {
+  .card-box {
+    max-height: 500px;
+    margin-bottom: 2rem;
+  }
+}
+.card-product .card-body {
+  position: relative;
+}
+
+.product-img {
+  width: 100%; /* Landscape width */
+  height: 236px; /* Landscape height */
+  background-color: #f0f0f0; /* Optional: Background color for whitespace */
+  display: flex;
+  justify-content: center; /* Horizontally center image */
+  align-items: center; /* Vertically center image */
+  overflow: hidden; /* Prevent overflow */
+  border: 1px solid #ccc; /* Optional: Border for visualization */
+}
+
+.img-fluid {
+  display: block;
+  margin: auto;
+}
+
+.card-product .product-category-box {
+  position: absolute;
+  text-align: center;
+  top: -16px;
+  left: 15px;
+  right: 15px;
+  line-height: 25px;
+  overflow: hidden;
+}
+
+.card-product .product-category {
+  display: inline-block;
+  color: #fff;
+  padding: 0 15px 5px;
+  overflow: hidden;
+  background-color: #0078ff;
+  border-radius: 4px;
+}
+
+.card-product .product-category .category {
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1px;
+  margin-bottom: 0;
+}
+
+.card-product .product-title {
+  font-size: 1.3rem;
+  margin-top: 0.6rem;
+}
+
+.card-product .product-description {
+  color: #4e4e4e;
+}
+
+.card-product .priceAndRating {
+  display: inline-block;
+}
+
+.card-product .actions {
+  color: #4e4e4e;
+  float: right;
+}
+
+.card-footer .favourite,
+.cart {
+  transition: transform 0.3s ease;
+}
+
+.card-footer .favourite,
+.cart {
+  transform: scale(1);
+}
+
+.anime-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anime-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

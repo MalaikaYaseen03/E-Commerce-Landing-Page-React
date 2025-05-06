@@ -11,7 +11,7 @@ const TextInput = () => {
                 type="search"
                 name="search"
                 id="search"
-                placeholder="Search for products..."
+                placeholder="Search products..."
               />
             </div>
           </div>

@@ -1,4 +1,4 @@
-.dropdowns {
+.dropdownBtns {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -11,4 +11,6 @@
 
 .btn.dropdown-toggle {
   background-color: transparent !important;
+  color: rgb(147 141 141) !important;
+  border: 1px solid rgb(197 197 197) !important;
 }
