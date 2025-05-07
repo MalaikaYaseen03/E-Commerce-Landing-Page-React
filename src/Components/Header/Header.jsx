@@ -1,4 +1,4 @@
-import TextInput from "../TextInput/TextInput";
+import SearchBar from "../SearchBar/SearchBar";
 import "./Header.css";
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
               </div>
             </div>
             <div className="col-lg-6 col-8">
-              <TextInput />
+              <SearchBar />
             </div>
           </div>
         </div>

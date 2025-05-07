@@ -1,6 +1,15 @@
-import "./TextInput.css";
+import { useContext } from "react";
+import { ProductContext } from "../ProductContext/ProductContext";
+import "./SearchBar.css";
 
-const TextInput = () => {
+const SearchBar = () => {
+  const { setFilters } = useContext(ProductContext);
+
+  // function for searching products
+  const handleSearch = (event) => {
+    setFilters((prev) => ({ ...prev, serachTerm: event.target.value }));
+  };
+
   return (
     <>
       <div className="container searchBar">
@@ -12,6 +21,7 @@ const TextInput = () => {
                 name="search"
                 id="search"
                 placeholder="Search products..."
+                onChange={handleSearch}
               />
             </div>
           </div>
@@ -21,4 +31,4 @@ const TextInput = () => {
   );
 };
 
-export default TextInput;
+export default SearchBar;
