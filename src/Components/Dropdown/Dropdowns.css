@@ -11,6 +11,9 @@
 
 .btn.dropdown-toggle {
   background-color: transparent !important;
+  color: rgb(102, 102, 102) !important;
+  border: 1px solid rgb(146, 145, 145) !important;
+}
+.btn.dropdown-item {
   color: rgb(147 141 141) !important;
-  border: 1px solid rgb(197 197 197) !important;
 }

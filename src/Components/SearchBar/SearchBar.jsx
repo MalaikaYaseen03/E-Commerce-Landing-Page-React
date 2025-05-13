@@ -7,7 +7,7 @@ const SearchBar = () => {
 
   // function for searching products
   const handleSearch = (event) => {
-    setFilters((prev) => ({ ...prev, serachTerm: event.target.value }));
+    setFilters((prev) => ({ ...prev, searchTerm: event.target.value }));
   };
 
   return (
@@ -20,6 +20,7 @@ const SearchBar = () => {
                 type="search"
                 name="search"
                 id="search"
+                className="bi bi-search"
                 placeholder="Search products..."
                 onChange={handleSearch}
               />
