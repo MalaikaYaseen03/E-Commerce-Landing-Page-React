@@ -1,0 +1,24 @@
+.sidebar {
+  padding: 20px;
+  background: #f9f9f9;
+  border-right: 1px solid #ddd;
+  height: 100%;
+}
+.filter-group {
+  margin-bottom: 15px;
+}
+.filter-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.btn-reset {
+  background: #e74c3c;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+}

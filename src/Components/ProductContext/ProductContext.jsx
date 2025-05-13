@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useMemo, useState } from "react";
 import products from "../../Data/Products";
 export const ProductContext = createContext();
 
@@ -7,12 +7,26 @@ export const ProductProvider = ({ children }) => {
   const [filters, setFilters] = useState({
     category: "",
     brand: "",
-    priceRange: [0, 100000],
-    rating: [0, 5],
+    minPrice: 0,
+    maxPrice: 100000,
+    minRating: 0,
+    maxRating: 5,
     favourite: false,
+    searchTerm: "",
   });
   const [sortBy, setSortBy] = useState("");
   const [order, setOrder] = useState("");
+
+  // Dynamically generate categories and brands
+  const categories = useMemo(() => {
+    const unique = [...new Set(products.map((product) => product.category))];
+    return unique;
+  }, []);
+
+  const brands = useMemo(() => {
+    const unique = [...new Set(products.map((p) => p.brand.name))];
+    return unique;
+  }, []);
 
   return (
     <ProductContext.Provider
@@ -25,6 +39,8 @@ export const ProductProvider = ({ children }) => {
         setSortBy,
         order,
         setOrder,
+        categories,
+        brands,
       }}
     >
       {children}
