@@ -1,9 +1,9 @@
 import { createContext, useState } from "react";
-
+import products from "../../Data/Products";
 export const ProductContext = createContext();
 
 export const ProductProvider = ({ children }) => {
-  const [product, setProduct] = useState([]); // Initialize with product data
+  const [product, setProduct] = useState(products); // Initialize with product data
   const [filters, setFilters] = useState({
     category: "",
     brand: "",
@@ -11,10 +11,21 @@ export const ProductProvider = ({ children }) => {
     rating: [0, 5],
     favourite: false,
   });
+  const [sortBy, setSortBy] = useState("");
+  const [order, setOrder] = useState("");
 
   return (
     <ProductContext.Provider
-      value={{ product, setProduct, filters, setFilters }}
+      value={{
+        product,
+        setProduct,
+        filters,
+        setFilters,
+        sortBy,
+        setSortBy,
+        order,
+        setOrder,
+      }}
     >
       {children}
     </ProductContext.Provider>
